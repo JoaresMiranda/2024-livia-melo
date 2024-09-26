@@ -1,0 +1,22 @@
+{
+  "name": "2024-livia-melo",
+  "version": "1.0.0",
+  "description": "Site Livia Melo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaresMiranda/2024-livia-melo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaresMiranda/2024-livia-melo/issues"
+  },
+  "homepage": "https://github.com/JoaresMiranda/2024-livia-melo#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
