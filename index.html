@@ -10,18 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./assets/output.css" rel="stylesheet" />
-    <script src="./assets/js/scripts.js" defer></script>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./scripts.js" defer></script>
     <title>Lívia Melo - Psicóloga</title>
   </head>
   <body class="bg-soft-beige">
-    <header class="w-full bg-white block fixed">
+    <header class="w-full bg-white block relative">
       <div class="header-content px-8 py-4 flex max-w-screen-2xl items-center m-auto">
         <div class="logo">
-          <img
-            src="./assets/images/logo-livia-melo-psicologa.png"
-            alt="Logo Lívia Melo - Psicóloga"
-          />
+          <img src="./images/logo-livia-melo-psicologa.png" alt="Logo Lívia Melo - Psicóloga" />
         </div>
         <nav class="menu ml-auto">
           <ul class="hidden lg:visible lg:flex gap-6 xl:gap-16">
@@ -34,10 +31,10 @@
           </ul>
         </nav>
         <div class="menu-mobile ml-auto lg:hidden cursor-pointer" onclick="menuToggle()">
-          <img src="./assets/images/menu.svg" />
+          <img src="./images/menu.svg" />
         </div>
       </div>
-      <nav class="menuDropDown flex-nowrap hidden lg:hidden bg-white">
+      <nav class="menuDropDown flex-nowrap hidden lg:hidden bg-white absolute w-full">
         <ul class="flex flex-col text-center">
           <li class="">
             <a href="#Home" class="selected">Home</a>
@@ -50,5 +47,36 @@
         </ul>
       </nav>
     </header>
+    <div>
+      <div class="about bg-soft-blue border-b-[12px] border-dark-beige">
+        <div
+          class="about__content max-w-screen-2xl m-auto flex flex-col lg:flex-row justify-center items-center"
+        >
+          <div
+            class="about__text w-96 text-center lg:text-left lg:ml-32 absolute lg:relative mt-52 lg:mt-0"
+          >
+            <h2 class="text-2xl font-semibold text-dark-blue">
+              Ansiedade, depressão, baixa autoestima, desmotivação...
+            </h2>
+            <div class="text-white flex flex-col gap-4 my-6">
+              <p>
+                Existe um jeito de aliviar seus sofrimentos, encontrar estabilidade emocional e
+                retomar o controle da sua vida.
+              </p>
+              <p>Conheça mais sobre a terapia e agende seu atendimento agora.</p>
+              <a href="#"
+                ><img
+                  src="./images/bt-agendar.png"
+                  alt="Botão agendar atendimento"
+                  class="m-auto lg:m-0"
+              /></a>
+            </div>
+          </div>
+          <div class="about__image lg:ml-auto">
+            <img src="./images/livia-melo-perfil.png" class="max-h-[650px]" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

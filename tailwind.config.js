@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ['./*.{html,js,css}'],
   theme: {
     extend: {},
     colors: {
       'soft-green': '#659ba8',
       'soft-beige': '#F1E9E2',
-      white: '#FFF',
+      'soft-blue': '#93C2DB',
       'soft-black': '#282828',
+      'dark-blue': '#0C4584',
+      'dark-beige': '#B79132',
+      white: '#FFF',
     },
     fontFamily: {
       sans: ['Poppins'],
