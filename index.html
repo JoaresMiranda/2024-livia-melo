@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lívia Melo - Psicóloga - CRP11-04802" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./scripts.js" defer></script>
+    <title>Lívia Melo - Psicóloga</title>
+  </head>
+  <body class="bg-soft-beige">
+    <!-- HEADER -->
+    <header class="w-full bg-white block relative">
+      <div class="header-content px-8 py-4 flex max-w-screen-2xl items-center m-auto">
+        <div class="logo">
+          <img src="./images/logo-livia-melo-psicologa.png" alt="Logo Lívia Melo - Psicóloga" />
+        </div>
+        <nav class="menu ml-auto">
+          <ul class="hidden lg:visible lg:flex gap-6 xl:gap-16">
+            <li><a href="#" class="selected">Home</a></li>
+            <li><a href="#Servicos">Serviços</a></li>
+            <li><a href="#ComoFunciona">Como funciona</a></li>
+            <li><a href="#Consultorio">Consultório</a></li>
+            <li><a href="#Depoimentos">Depoimentos</a></li>
+            <li><a href="#Contato">Agendamentos</a></li>
+          </ul>
+        </nav>
+        <div class="menu-mobile ml-auto lg:hidden cursor-pointer" onclick="menuToggle()">
+          <img src="./images/menu.svg" />
+        </div>
+      </div>
+      <nav class="menuDropDown flex-nowrap hidden lg:hidden bg-white absolute w-full">
+        <ul class="flex flex-col text-center">
+          <li class="">
+            <a href="#Home" class="selected">Home</a>
+          </li>
+          <li><a href="#Servicos">Serviços</a></li>
+          <li><a href="#ComoFunciona">Como funciona</a></li>
+          <li><a href="#Depoimentos">Depoimentos</a></li>
+          <li><a href="#Consultorio">Consultório</a></li>
+          <li><a href="#Agendamentos">Agendamentos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+      <!-- BIO -->
+      <div class="about bg-soft-blue border-b-[12px] border-dark-beige">
+        <div
+          class="about__content max-w-screen-2xl m-auto flex flex-col lg:flex-row justify-center items-center"
+        >
+          <div
+            class="about__text w-96 text-center lg:text-left lg:ml-32 absolute lg:relative mt-52 lg:mt-0"
+          >
+            <h2 class="text-2xl font-semibold text-dark-blue">
+              Ansiedade, depressão, baixa autoestima, desmotivação...
+            </h2>
+            <div class="text-white flex flex-col gap-4 my-6">
+              <p>
+                Existe um jeito de aliviar seus sofrimentos, encontrar estabilidade emocional e
+                retomar o controle da sua vida.
+              </p>
+              <p>Conheça mais sobre a terapia e agende seu atendimento agora.</p>
+              <a href="https://api.whatsapp.com/send?phone=558599856088"
+                ><img
+                  src="./images/bt-agendar.png"
+                  alt="Botão agendar atendimento"
+                  class="m-auto lg:m-0"
+              /></a>
+            </div>
+          </div>
+          <div class="about__image lg:ml-auto">
+            <img src="./images/livia-melo-perfil.png" class="max-h-[650px]" />
+          </div>
+        </div>
+      </div>
+
+      <!-- COMO FUNCIONA -->
+      <div id="Servicos" class="como-funciona text-center py-16 max-w-screen-2xl m-auto">
+        <h2 class="text-xl py-4">Terapia Cognitico Comportamental</h2>
+        <h3 class="font-bold">Serviços Disponíveis:</h3>
+        <div class="servicos flex flex-col lg:flex-row gap-8 mx-16 my-8 items-stretch">
+          <div class="servicos_card border-soft-red border rounded-2xl p-8 w-full">
+            <img src="./images/servicos_avaliacao.png" class="w-24 mx-auto mb-4" />
+            <h4>Avaliação Neurológica e Reabilitação Cognitiva</h4>
+          </div>
+          <div class="servicos_card border-soft-red border rounded-2xl p-8 w-full">
+            <img src="./images/servicos_depressao.png" class="w-24 mx-auto mb-4" />
+            <h4>Terapia de Burnout, Ansiedade, Depressão</h4>
+          </div>
+          <div class="servicos_card border-soft-red border rounded-2xl p-8 w-full">
+            <img src="./images/servicos_terapia.png" class="w-24 mx-auto mb-4" />
+            <h4>Terapia de Adolescentes, Adultos, Casais e Idosos</h4>
+          </div>
+          <div class="servicos_card border-soft-red border rounded-2xl p-8 w-full">
+            <img src="./images/servicos_orientacao.png" class="w-24 mx-auto mb-4" />
+            <h4>Orientação Profissionai/Transição de carreira</h4>
+          </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=558599856088"
+          ><img src="./images/bt-agendar.png" alt="Botão agendar atendimento" class="m-auto"
+        /></a>
+      </div>
+
+      <!-- PILARES DA TERAPIA -->
+      <div id="ComoFunciona" class="max-w-screen-md m-auto py-12">
+        <h2 class="text-center text-2xl w-96 m-auto">
+          A Terapia é um tratamento que funciona em 4 pilares:
+        </h2>
+        <div class="container bg-gray-200 mx-auto w-full h-full">
+          <div class="relative wrap overflow-hidden p-10 h-full">
+            <div
+              class="border-2-2 absolute border-opacity-20 border-soft-red h-full border lg:left-2/4"
+            ></div>
+            <!-- ITEM 1 -->
+            <div class="mb-8 flex lg:flex-row-reverse justify-between w-full">
+              <div class="order-1 hidden lg:block w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full -ml-4 lg:ml-0 mr-4 lg:mr-0"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-[90%] lg:w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">1. Diagnóstico</h3>
+                <p class="text-sm leading-6">
+                  O paciente é avaliado para
+                  <span class="font-bold">identifocar problemas e sintomas</span>, auxiliando na
+                  compreensão das situações e sentimentos que ele vem enfrentando.
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="mb-8 flex justify-between w-full">
+              <div class="order-1 hidden lg:block w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full -ml-4 lg:ml-0 mr-4 lg:mr-0"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-[90%] lg:w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">2. Plano de Tratamento com Protocolos</h3>
+                <p class="text-sm leading-6">
+                  Com base no diagnóstico, é elaborado um
+                  <span class="font-bold">plano de tratamento personalizado</span>. Protocolos
+                  específicos são selecionados conforme as necessidades do paciente.
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="mb-8 flex lg:flex-row-reverse justify-between w-full">
+              <div class="order-1 hidden lg:block w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full -ml-4 lg:ml-0 mr-4 lg:mr-0"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-[90%] lg:w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">3. Direcionamento com Ferramentas Práticas</h3>
+                <p class="text-sm leading-6">
+                  Durante as sessões, o paciente é orientado na aplicação das técnicas da TCC,
+                  incluindo a <span class="font-bold">identificação e modificação</span> de
+                  pensamentos negativos e comportamentos disfuncionais.
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="mb-8 flex justify-between w-full">
+              <div class="order-1 hidden lg:block w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full -ml-4 lg:ml-0 mr-4 lg:mr-0"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-[90%] lg:w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">4. Alta do paciente</h3>
+                <p class="text-sm leading-6">
+                  Quando os objetivos terapêuticos são alcançados e o paciente demonstra melhora
+                  significativa, a terapia é encerrada, permitindo que o paciente continue a
+                  <span class="font-bold"
+                    >aplicar as habilidades e ferramentas aprendidas de forma independente</span
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-xl md:text-2xl text-center my-8">
+          Uma abordagem de tratamento efetiva e diretiva que oferece ao paciente todas as
+          ferramentas que ele precisa para <span class="text-soft-red">conquistar autonomia</span> e
+          recuperar sua qualidade de vida.
+        </h3>
+        <a href="https://api.whatsapp.com/send?phone=558599856088"
+          ><img src="./images/bt-agendar.png" alt="Botão agendar atendimento" class="m-auto"
+        /></a>
+      </div>
+
+      <!-- CONSULTORIO-->
+      <div
+        id="Consultorio"
+        class="consultorio bg-soft-blue border-t-4 border-b-4 border-dark-beige"
+      >
+        <div class="consultorio__content text-center py-16 max-w-screen-2xl m-auto">
+          <h2 class="text-xl py-4">Conheça o consultório</h2>
+          <div class="consultorio__fotos flex flex-wrap justify-center gap-16 mx-16 my-8">
+            <img src="./images/consultorio-1.png" class="max-w-[350px]" />
+            <img src="./images/consultorio-2.png" class="max-w-[350px]" />
+            <img src="./images/consultorio-3.png" class="max-w-[350px]" />
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=558599856088"
+            ><img src="./images/bt-agendar.png" alt="Botão agendar atendimento" class="m-auto"
+          /></a>
+        </div>
+      </div>
+
+      <!-- DEPOIMENTOS -->
+      <div
+        id="Depoimentos"
+        class="depoimentos text-center pt-32 pb-48 lg:py-32 max-w-screen-md m-auto relative"
+      >
+        <div class="depoimentos__text absolute w-full">
+          <h2 class="text-xl w-72 m-auto mt-9 md:mt-14">
+            O que os nossos pacientes <strong>dizem:</strong>
+          </h2>
+          <div class="depoimentos__carrousel mt-20 sm:mt-32">
+            <div class="depoimentos__content ml-6">
+              <h4 class="depoimentos__name text-white text-xl sm:text-2xl font-bold mb-2">Júlia</h4>
+              <p class="text-white w-[350px] sm:w-[450px] m-auto text-sm leading-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia amet assumenda
+                doloremque aperiam, ad sunt dolor maiores, quos consectetur velit ipsa voluptatum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./images/background-depoimentos.png" class="w-full" />
+      </div>
+
+      <!-- APRESENTACAO-->
+      <div class="apresentacao bg-soft-blue border-t-4 border-b-4 border-soft-red pt-16 lg:pb-16">
+        <div
+          class="apresentacao__content max-w-[80%] lg:max-w-[850px] m-auto flex flex-col lg:flex-row justify-center items-center p-8 border border-soft-red rounded-2xl relative -top-24 lg:top-0"
+        >
+          <img
+            src="./images/foto-bio-livia-melo.png"
+            class="w-[350px] relative -top-24 lg:top-0 lg:-ml-24"
+          />
+          <div class="apresentacao__text text-center lg:text-left -mt-16 lg:mt-0 lg:ml-8">
+            <h2 class="text-soft-red text-xl">Lívia Pires Melo</h2>
+            <h3>Psicóloga e Neuropsicóloga</h3>
+            <div class="my-4 leading-10 text-sm">
+              <p>Graduada em psicologia pela Universidade de Fortaleza</p>
+              <ul>
+                <li>Pos Graduada em Psicodrama na UECE</li>
+                <li>Pos Graduada em Socionomia na UECE</li>
+                <li>MBA em Gestão de Negócios – FGV</li>
+                <li>Pos Graduada em Neuropsicologia na Unichristus</li>
+                <li>Formação em Terapia Cognitiva Comportamental - TCC</li>
+              </ul>
+              <p>
+                18 anos de experiência com atendimento clínico para adolescentes, adultos, idosos e
+                famílias em clínica particular.
+              </p>
+              <p>Os atendimentos ocorrem na modalidade presencial e online.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTATO -->
+      <div id="Contato" class="contato">
+        <div
+          class="contato__content my-16 p-16 max-w-[80%] lg:max-w-screen-lg m-auto bg-white rounded-2xl flex flex-col lg:flex-row gap-8 justify-center items-center"
+        >
+          <div class="contato__form max-w-[500px]">
+            <h2 class="text-3xl font-bold">Entre em <span class="text-soft-red">Contato</span></h2>
+            <p class="text-sm">Atendimento online: Zoom, Skype ou Meet</p>
+            <form class="my-8">
+              <input
+                type="text"
+                placeholder="Nome"
+                class="w-full border border-soft-red p-2 my-2"
+              />
+              <input
+                type="text"
+                placeholder="E-mail"
+                class="w-full border border-soft-red p-2 my-2"
+              />
+              <input
+                type="text"
+                placeholder="Telefone"
+                class="w-full border border-soft-red p-2 my-2"
+              />
+              <select class="w-full border border-soft-red p-2 my-2">
+                <option>Instagram</option>
+                <option>Indicação de amigo</option>
+                <option>Google</option>
+              </select>
+              <button type="submit" class="w-full bg-soft-red text-white p-2 my-2">Enviar</button>
+            </form>
+            <div class="outros_contatos flex flex-col lg:flex-row gap-4">
+              <div class="flex items-center">
+                <img src="./images/ic_telefone.png" class="w-7 h-7 mr-2" />
+                <div>
+                  <p class="font-bold">Telefone</p>
+                  <p>
+                    <a href="tel:+558599856088" target="_blank" class="text-soft-red text-sm"
+                      >+55 85 9985-6088</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="./images/ic_email.png" class="w-7 h-7 mr-2" />
+                <div>
+                  <p class="font-bold">E-mail</p>
+                  <p>
+                    <a
+                      href="mailto:contato@liviamelopsi.com.br"
+                      target="_blank"
+                      class="text-soft-red text-sm"
+                      >contato@liviamelopsi.com.br</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contato__mapa max-w-[500px]">
+            <img src="./images/mapa.png" class="w-full" />
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="bg-dark-blue border border-t-2 border-dark-beige">
+        <ul
+          class="max-w-screen-md flex flex-col lg:flex-row justify-center items-center p-6 m-auto gap-4 lg:gap-16 text-sm text-white"
+        >
+          <li class="flex justify-center items-center">
+            <img src="./images/ic_reg.png" class="mr-2" />2024 Todos os direitos reservados
+          </li>
+          <li class="flex justify-center items-center">
+            <img src="./images/ic_privacidade.png" class="mr-2" /><a href="#"
+              >Política de privacidade</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <img src="./images/ic_user.png" class="mr-2" /><a href="#">Termos de uso</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- /MAIN -->
+  </body>
+</html>

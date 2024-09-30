@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu a,
+.menuDropDown a {
+  color: #659ba8;
+}
+
+.selected {
+  color: #282828;
+}
+
+.menuDropDown li {
+  padding: 0.5rem 0;
+}
+
+.menuDropDown li:hover {
+  background-color: #659ba8;
+  cursor: pointer;
+}
+
+.menuDropDown li:hover a {
+  color: #fff;
+}
