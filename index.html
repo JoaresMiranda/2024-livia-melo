@@ -23,12 +23,12 @@
         </div>
         <nav class="menu ml-auto">
           <ul class="hidden lg:visible lg:flex gap-6 xl:gap-16">
-            <li><a href="#Home" class="selected">Home</a></li>
+            <li><a href="#" class="selected">Home</a></li>
             <li><a href="#Servicos">Serviços</a></li>
             <li><a href="#ComoFunciona">Como funciona</a></li>
-            <li><a href="#Depoimentos">Depoimentos</a></li>
             <li><a href="#Consultorio">Consultório</a></li>
-            <li><a href="#Agendamentos">Agendamentos</a></li>
+            <li><a href="#Depoimentos">Depoimentos</a></li>
+            <li><a href="#Contato">Agendamentos</a></li>
           </ul>
         </nav>
         <div class="menu-mobile ml-auto lg:hidden cursor-pointer" onclick="menuToggle()">
@@ -84,7 +84,7 @@
       </div>
 
       <!-- COMO FUNCIONA -->
-      <div class="como-funciona text-center py-16 max-w-screen-2xl m-auto">
+      <div id="Servicos" class="como-funciona text-center py-16 max-w-screen-2xl m-auto">
         <h2 class="text-xl py-4">Terapia Cognitico Comportamental</h2>
         <h3 class="font-bold">Serviços Disponíveis:</h3>
         <div class="servicos flex flex-col lg:flex-row gap-8 mx-16 my-8 items-stretch">
@@ -110,8 +110,100 @@
         /></a>
       </div>
 
+      <!-- PILARES DA TERAPIA -->
+      <div id="ComoFunciona" class="max-w-screen-md m-auto py-12">
+        <h2 class="text-center text-2xl w-96 m-auto">
+          A Terapia é um tratamento que funciona em 4 pilares:
+        </h2>
+        <div class="container bg-gray-200 mx-auto w-full h-full">
+          <div class="relative wrap overflow-hidden p-10 h-full">
+            <div
+              class="border-2-2 absolute border-opacity-20 border-soft-red h-full border"
+              style="left: 50%"
+            ></div>
+            <!-- left timeline -->
+            <div class="mb-8 flex flex-row-reverse justify-between w-full right-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">1. Diagnóstico</h3>
+                <p class="text-sm leading-6">
+                  O paciente é avaliado para
+                  <span class="font-bold">identifocar problemas e sintomas</span>, auxiliando na
+                  compreensão das situações e sentimentos que ele vem enfrentando.
+                </p>
+              </div>
+            </div>
+
+            <!-- right timeline -->
+            <div class="mb-8 flex justify-between w-full left-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">2. Plano de Tratamento com Protocolos</h3>
+                <p class="text-sm leading-6">
+                  Com base no diagnóstico, é elaborado um
+                  <span class="font-bold">plano de tratamento personalizado</span>. Protocolos
+                  específicos são selecionados conforme as necessidades do paciente.
+                </p>
+              </div>
+            </div>
+
+            <!-- left timeline -->
+            <div class="mb-8 flex flex-row-reverse justify-between w-full right-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">3. Direcionamento com Ferramentas Práticas</h3>
+                <p class="text-sm leading-6">
+                  Durante as sessões, o paciente é orientado na aplicação das técnicas da TCC,
+                  incluindo a <span class="font-bold">identificação e modificação</span> de
+                  pensamentos negativos e comportamentos disfuncionais.
+                </p>
+              </div>
+            </div>
+
+            <!-- right timeline -->
+            <div class="mb-8 flex justify-between w-full left-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div
+                class="z-20 flex items-center order-1 bg-soft-red shadow-xl w-8 h-8 rounded-full"
+              ></div>
+              <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="text-soft-red font-bold">4. Alta do paciente</h3>
+                <p class="text-sm leading-6">
+                  Quando os objetivos terapêuticos são alcançados e o paciente demonstra melhora
+                  significativa, a terapia é encerrada, permitindo que o paciente continue a
+                  <span class="font-bold"
+                    >aplicar as habilidades e ferramentas aprendidas de forma independente</span
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-xl md:text-3xl text-center my-8">
+          Uma abordagem de tratamento efetiva e diretiva que oferece ao paciente todas as
+          ferramentas que ele precisa para <span class="text-soft-red">conquistar autonomia</span> e
+          recuperar sua qualidade de vida.
+        </h3>
+        <a href="https://api.whatsapp.com/send?phone=558599856088"
+          ><img src="./images/bt-agendar.png" alt="Botão agendar atendimento" class="m-auto"
+        /></a>
+      </div>
+
       <!-- CONSULTORIO-->
-      <div class="consultorio bg-soft-blue border-t-4 border-b-4 border-dark-beige">
+      <div
+        id="Consultorio"
+        class="consultorio bg-soft-blue border-t-4 border-b-4 border-dark-beige"
+      >
         <div class="consultorio__content text-center py-16 max-w-screen-2xl m-auto">
           <h2 class="text-xl py-4">Conheça o consultório</h2>
           <div class="consultorio__fotos flex flex-wrap justify-center gap-16 mx-16 my-8">
@@ -126,7 +218,10 @@
       </div>
 
       <!-- DEPOIMENTOS -->
-      <div class="depoimentos text-center pt-32 pb-48 lg:py-32 max-w-screen-md m-auto relative">
+      <div
+        id="Depoimentos"
+        class="depoimentos text-center pt-32 pb-48 lg:py-32 max-w-screen-md m-auto relative"
+      >
         <div class="depoimentos__text absolute w-full">
           <h2 class="text-xl w-72 m-auto mt-9 md:mt-14">
             O que os nossos pacientes <strong>dizem:</strong>
@@ -176,7 +271,7 @@
       </div>
 
       <!-- CONTATO -->
-      <div class="contato">
+      <div id="Contato" class="contato">
         <div
           class="contato__content my-16 p-16 max-w-[80%] lg:max-w-screen-lg m-auto bg-white rounded-2xl flex flex-col lg:flex-row gap-8 justify-center items-center"
         >
