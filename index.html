@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./build.css" rel="stylesheet" />
     <script src="./scripts.js" defer></script>
     <title>Lívia Melo - Psicóloga</title>
   </head>
@@ -23,28 +23,50 @@
         </div>
         <nav class="menu ml-auto">
           <ul class="hidden lg:visible lg:flex gap-6 xl:gap-16">
-            <li><a href="#" class="selected">Home</a></li>
-            <li><a href="#Servicos">Serviços</a></li>
-            <li><a href="#ComoFunciona">Como funciona</a></li>
-            <li><a href="#Consultorio">Consultório</a></li>
-            <li><a href="#Depoimentos">Depoimentos</a></li>
-            <li><a href="#Contato">Agendamentos</a></li>
+            <li class="text-soft-green"><a href="#" class="selected">Home</a></li>
+            <li class="text-soft-green"><a href="#Servicos">Serviços</a></li>
+            <li class="text-soft-green"><a href="#ComoFunciona">Como funciona</a></li>
+            <li class="text-soft-green"><a href="#Consultorio">Consultório</a></li>
+            <li class="text-soft-green"><a href="#Depoimentos">Depoimentos</a></li>
+            <li class="text-soft-green"><a href="#Contato">Agendamentos</a></li>
           </ul>
         </nav>
         <div class="menu-mobile ml-auto lg:hidden cursor-pointer" onclick="menuToggle()">
           <img src="./images/menu.svg" />
         </div>
       </div>
-      <nav class="menuDropDown flex-nowrap hidden lg:hidden bg-white absolute w-full">
+      <nav class="menuDropDown flex-nowrap hidden bg-white absolute w-full">
         <ul class="flex flex-col text-center">
-          <li class="">
-            <a href="#Home" class="selected">Home</a>
+          <li
+            class="py-2 hover:bg-soft-green hover:text-white text-soft-green cursor-pointer block"
+          >
+            <a href="#Home">Home</a>
           </li>
-          <li><a href="#Servicos">Serviços</a></li>
-          <li><a href="#ComoFunciona">Como funciona</a></li>
-          <li><a href="#Depoimentos">Depoimentos</a></li>
-          <li><a href="#Consultorio">Consultório</a></li>
-          <li><a href="#Agendamentos">Agendamentos</a></li>
+          <li
+            class="py-2 hover:bg-soft-green hover:text-white text-soft-green cursor-pointer block"
+          >
+            <a href="#Servicos">Serviços</a>
+          </li>
+          <li
+            class="py-2 hover:bg-soft-green hover:text-white text-soft-green cursor-pointer block"
+          >
+            <a href="#ComoFunciona">Como funciona</a>
+          </li>
+          <li
+            class="py-2 hover:bg-soft-green hover:text-white text-soft-green cursor-pointer block"
+          >
+            <a href="#Depoimentos">Depoimentos</a>
+          </li>
+          <li
+            class="py-2 hover:bg-soft-green hover:text-white text-soft-green cursor-pointer block"
+          >
+            <a href="#Consultorio">Consultório</a>
+          </li>
+          <li
+            class="py-2 hover:bg-soft-green hover:text-white text-soft-green cursor-pointer block"
+          >
+            <a href="#Agendamentos">Agendamentos</a>
+          </li>
         </ul>
       </nav>
     </header>
