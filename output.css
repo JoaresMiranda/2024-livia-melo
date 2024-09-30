@@ -1036,6 +1036,10 @@ video {
   border-top-width: 4px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-dark-beige {
   --tw-border-opacity: 1;
   border-color: rgb(183 145 50 / var(--tw-border-opacity));
@@ -1090,6 +1094,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-8 {
@@ -1391,6 +1399,10 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 
   .lg\:py-16 {
