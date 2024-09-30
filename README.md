@@ -4,9 +4,32 @@
 
 Landing page created for Livia Melo.
 
-## Skills
+# Details
 
-- TailwindCSS
-- PostCSS
+The library is built with:
+
 - HTML5
-- CSS3
+- CSS 3
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Get Started
+
+Install all the dependencies
+
+```shell
+npm run install
+```
+
+Start the project
+
+```shell
+npm run dev
+```
+
+## Build
+
+Build Component Library
+
+```shell
+npm run build
+```
